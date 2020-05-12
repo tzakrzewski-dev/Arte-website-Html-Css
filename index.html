@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Rajdhani:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Arte</title>
+  </head>
+  <body>
+    <header>
+      <nav id="container-desktop" class="container-sm container-md">
+        <div class="row text-align-center">
+          <div class="col-2 col-sm-2 my-auto">
+            <div>
+              <a href="https://www.artenobilia.com/" target="_blank"
+                ><img
+                  id="logo"
+                  src="./assets/images/logo.png"
+                  alt="logo arte"
+                  srcset=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-10 col-sm-10 my-auto">
+            <ul
+              id="menubloc"
+              class="text-decoration fw-uppercase fc-gris fw-bold fs-16 margin-auto"
+            >
+              <li>
+                <a href="#">a propos</a>
+              </li>
+              <li>
+                <a href="#">ateliers de creation</a>
+              </li>
+              <li>
+                <a href="#">mobilier</a>
+              </li>
+              <li>
+                <a href="#">luminaires</a>
+              </li>
+              <li>
+                <a href="#">objets d'art</a>
+              </li>
+              <li>
+                <a href="#">actus</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- menu navbar hamburger -->
+
+      <nav class="navhamburger">
+        <div id="logo-hamburger" class="text-align-center">
+          <a href="https://www.artenobilia.com/" target="_blank"
+            ><img
+              id="logoham"
+              src="./assets/images/logo.png"
+              alt="logo arte"
+              srcset=""
+          /></a>
+        </div>
+        <div class="dropdown" style="width: 100%;">
+          <button class="dropbtn">
+            <img src="./assets/images/bars-solid.svg" alt="" />
+          </button>
+
+          <div class="dropdown-content">
+            <ul class="listehamburger">
+              <li><a href="#">A PROPOS</a></li>
+              <li><a href="#services">ATELIER DE CREATION</a></li>
+              <li><a href="#realisation">MOBILIER</a></li>
+              <li><a href="#">LUMINAIRE</a></li>
+              <li><a href="#">OBJETS D'ART</a></li>
+              <li><a href="#">ACTUS</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="header-image">
+      <div class="header-image-img">
+        <div>
+          <h1 class="txt-center marg-left-right-auto marg-top-bottom-zero">
+            artenobilia
+          </h1>
+          <p class="txt-center marg-left-right-auto marg-top-bottom-zero">
+            L'excellence française des métiers d'art
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative display-flex height-150px">
+      <h2 class="fw-bold txt-center fw-uppercase marg-left-right-auto my-auto">
+        catalogue
+      </h2>
+    </section>
+    <section id="catalogue-desktop" class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 my-auto">
+          <div class="grid-container fw-bold integrertxt fs-20 fw-uppercase">
+            <div id="item1" class="item1 relative">
+              <img class="relative" src="./assets/images/mobilier.jpg" />
+              <h3 class="tagImage fw-bold">
+                Mobilier
+              </h3>
+            </div>
+            <div id="item2" class="item2 relative">
+              <div>
+                <img
+                  class="width100 relative"
+                  src="./assets/images/exterieur.jpg"
+                />
+                <h3 class="tagImage fw-bold">
+                  Luminaire
+                </h3>
+              </div>
+            </div>
+            <div id="item3" class="item3 relative">
+              <div>
+                <img
+                  class="width100 relative"
+                  src="./assets/images/luminaires.jpg"
+                />
+                <h3 class="tagImage fw-bold">
+                  Luminaire
+                </h3>
+              </div>
+            </div>
+            <div id="item4" class="item4 relative">
+              <div>
+                <img class="relative" src="./assets/images/bijoux.jpg" />
+                <h3 class="tagImage fw-bold">
+                  Bijoux
+                </h3>
+              </div>
+            </div>
+            <div id="item5" class="item5 relative">
+              <div>
+                <img class="relative" src="./assets/images/arts-table.jpg" />
+                <h3 class="tagImage fw-bold">
+                  Mobilier
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="catalogue-mobile">
+      <div class="container container-sm">
+        <div class="row">
+          <div id="item1" class="offset-2 col-sm-8 offset-2 margin-auto">
+            <img class="relative width100" src="./assets/images/mobilier.jpg" />
+            <h3 class="tagImage fw-bold">
+              Mobilier
+            </h3>
+          </div>
+          <div id="item2" class="offset-2 col-sm-8 offset-2">
+            <img
+              class="relative width100"
+              src="./assets/images/exterieur.jpg"
+            />
+            <h3 class="tagImage fw-bold">
+              extérieur
+            </h3>
+          </div>
+          <div id="item3" class="offset-2 col-sm-8 offset-2">
+            <img
+              class="relative width100"
+              src="./assets/images/luminaires.jpg"
+            />
+            <h3 class="tagImage fw-bold">
+              Luminaire
+            </h3>
+          </div>
+          <div id="item4" class="offset-2 col-sm-8 offset-2">
+            <img class="relative width100" src="images/bijoux.jpg" />
+            <h3 class="tagImage fw-bold">
+              Bijoux
+            </h3>
+          </div>
+          <div id="item5" class="offset-2 col-sm-8 offset-2">
+            <img
+              class="relative width100"
+              src="./assets/images/arts-table.jpg"
+            />
+            <h3 class="tagImage fw-bold">
+              art de la table
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative display-flex height-150px">
+      <h2 class="fw-bold txt-center fw-uppercase marg-left-right-auto my-auto">
+        nouveaux produits
+      </h2>
+    </section>
+
+    <section id="produit">
+      <div class="container container-sm">
+        <div class="row row-cols-4">
+          <div id="contimg1" class="col-3 col-sm-3">
+            <img id="img1" class="width100" src="./assets/images/new-4.jpg" />
+            <h3 class="fw-bold integrertxt fs-16 fw-uppercase">
+              suspension &#x22;sarabande&#x22;
+            </h3>
+          </div>
+          <div id="contimg2" class="col-3 col-sm-3">
+            <img id="img2" class="width100" src="./assets/images/new-2.jpg" />
+            <h3 class="fw-bold integrertxt fs-16 fw-uppercase">
+              sculpture murale &#x22;arapeda&#x22;
+            </h3>
+          </div>
+          <div id="contimg3" class="col-3 col-sm-3">
+            <img id="img3" class="width100" src="./assets/images/new-3.jpg" />
+            <h3 class="fw-bold integrertxt fs-16 fw-uppercase">
+              vase tube &#x22;bambou&#x22;
+            </h3>
+          </div>
+          <div id="contimg4" class="col-3 col-sm-3">
+            <img id="img4" class="width100" src="./assets/images/new-4.jpg" />
+            <h3 class="fw-bold integrertxt fs-16 fw-uppercase">
+              suspension &#x22;sarabande&#x22;
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="produit-mobile">
+      <div class="container container-sm">
+        <div class="row">
+          <div id="contimg1" class="offset-2 col-sm-8 offset-2">
+            <img id="img1" class="width100" src="./assets/images/new-4.jpg" />
+            <h3 class="fw-bold integrertxt fs-16 fw-uppercase">
+              suspension &#x22;sarabande&#x22;
+            </h3>
+          </div>
+          <div id="contimg2" class="offset-2 col-sm-8 offset-2">
+            <img id="img2" class="width100" src="./assets/images/new-2.jpg" />
+            <h3 class="fw-bold integrertxt fs-16 fw-uppercase">
+              sculpture murale &#x22;arapeda&#x22;
+            </h3>
+          </div>
+          <div id="contimg3" class="offset-2 col-sm-8 offset-2">
+            <img id="img3" class="width100" src="./assets/images/new-3.jpg" />
+            <h3 class="fw-bold integrertxt fs-16 fw-uppercase">
+              vase tube &#x22;bambou&#x22;
+            </h3>
+          </div>
+          <div id="contimg4" class="offset-2 col-sm-8 offset-2">
+            <img id="img4" class="width100" src="./assets/images/new-4.jpg" />
+            <h3 class="fw-bold integrertxt fs-16 fw-uppercase">
+              suspension &#x22;sarabande&#x22;
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative display-flex height-150px">
+      <h2 class="fw-bold txt-center fw-uppercase marg-left-right-auto my-auto">
+        exposition virtuelle
+      </h2>
+    </section>
+
+    <section class="expo-img display-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-12">
+            <div id="bg-noir" class="marg-left-right-auto">
+              <div class="flex">
+                <img
+                  class="marg-left-right-auto maxwidth100"
+                  src="./assets/images/expo-vituelle.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h3
+                  id="txt1"
+                  class="fc-blanc fw-bold fs-24 fw-uppercase txt-center"
+                >
+                  art up!lille,foire internationale d'art contemporain
+                </h3>
+                <p class="fc-blanc fw-light fs-20 txt-center">
+                  Art up! reporté en juin.La création contemporaine des Métiers
+                  d'art s'exposera pour la première fois à ART UP! Lille, foire
+                  internationale d'art contemporain, du 25 au 28 juin 2020
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relative display-flex height-150px">
+      <h2 class="fw-bold txt-center fw-uppercase marg-left-right-auto my-auto">
+        contactez-nous
+      </h2>
+    </section>
+    <section id="form" class="relative">
+      <div class="container">
+        <form class="marg-left-right-auto">
+          <div class="form-group">
+            <label class="fs-16 fw-bold" for="FormControlSelect1">Sujet</label>
+            <select class="form-control" id="FormControlSelect1">
+              <option>Service client</option>
+              <option>Service après vente</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="fs-16 fw-bold" for="InputEmail">Adresse e-mail</label>
+            <input
+              type="email"
+              class="form-control"
+              id="InputEmail"
+              aria-describedby="emailHelp"
+              placeholder="Saisir votre adresse email"
+            />
+          </div>
+          <div class="form-group">
+            <label class="fs-16 fw-bold" for="FormControlTextarea1"
+              >Message</label
+            >
+            <textarea
+              class="form-control"
+              id="FormControlTextarea1"
+              rows="3"
+              placeholder="Saisir votre message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark">ENVOYER</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer marg-left-right-auto fc-jaune">
+      <div class="container">
+        <div id="rowlogofooter" class="row">
+          <div class="col my-auto">
+            <img
+              id="logofooter"
+              class="marg-left-right-auto"
+              src="./assets/images/logo.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div
+            id="content-imgsocial"
+            class="col-8 marg-left-right-auto text-align-center"
+          >
+            <a href="https://fr-fr.facebook.com/artenobilia/" target="_blank"
+              ><img id="facebook" src="./assets/images/facebook.png" alt=""
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/florence-desproges-denneulin-52109063/"
+              target="_blank"
+              ><img src="./assets/images/linkedin.png" alt=""
+            /></a>
+            <a href="https://www.instagram.com/artenobilia/" target="_blank"
+              ><img src="./assets/images/twitter.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

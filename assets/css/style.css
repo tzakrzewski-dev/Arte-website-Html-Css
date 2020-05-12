@@ -1,0 +1,647 @@
+/*---overide police et taille---*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0.5rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 400;
+  color: #333333;
+}
+
+/*-----règles du client ----*/
+
+li {
+  margin: 0px;
+}
+a {
+  color: #333333;
+}
+a:hover {
+  text-decoration: none;
+  color: #fff;
+  transition: 1s;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+.fs-30 {
+  font-size: 30px;
+}
+
+.fs-50 {
+  font-size: 50px;
+}
+.fs-100 {
+  font-size: 100px;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fc-blanc {
+  color: #f6f3eb;
+}
+.fc-jaune {
+  color: #e3a939;
+}
+.fc-gris {
+  color: #333333;
+}
+.fw-uppercase {
+  text-transform: uppercase;
+}
+.text-decoration {
+  text-decoration: none;
+}
+.txt-center {
+  text-align: center;
+}
+.marg-left-right-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.marg-left-right-10px {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.marg-left-right-zero {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.marg-top-bottom-zero {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.height-150px {
+  height: 150px;
+}
+.width100 {
+  width: 100%;
+}
+.maxwidth100 {
+  max-width: 100%;
+}
+
+.display-flex {
+  display: flex;
+}
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.text-align-center {
+  text-align: center;
+}
+
+.tagImage {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.integrertxt {
+  text-align: center;
+  margin-top: 5%;
+}
+.flex {
+  display: flex;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.absolute-top-left-zero {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.absolute-enfant {
+  position: absolute;
+  top: 50%; /* poussé de la moitié de hauteur du référent */
+  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+}
+.text-align-center {
+  text-align: center;
+}
+
+/*-----début règles spécifiques ----*/
+
+body {
+  background-color: #fff;
+  margin-top: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+nav,
+.hamburger {
+  height: 150px;
+  display: flex;
+}
+
+#logo {
+  display: block;
+
+  max-width: 100%;
+  max-height: 100%;
+}
+#logo1 {
+  height: 100px;
+}
+
+#menubloc {
+  margin-bottom: 0;
+}
+#menubloc li {
+  display: inline;
+  padding: 0 5px;
+}
+
+#menubloc li a:hover {
+  text-decoration: none;
+  color: #e3a939;
+  transition: 1s;
+}
+
+#menubloc .header {
+  width: 100%;
+}
+
+.header-image {
+  display: flex;
+  justify-content: center;
+  background-size: contain;
+  background: url('../images/header.jpg');
+  /*background-size: cover;*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* width: 100%; /* width of container */
+  height: 500px; /* height of container */
+  object-fit: cover;
+}
+.header-image-img {
+  display: flex;
+  align-items: center;
+}
+
+.header-image-img div p {
+  width: 60%;
+}
+
+.title {
+  display: block;
+  transform: translateY(10%);
+
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.title h1,
+.title p {
+  width: 40%;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.relative h1 {
+  position: absolute;
+  top: 50%; /* poussé de la moitié de hauteur du référent */
+  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+}
+
+.navhamburger {
+  display: none;
+}
+#produit-mobile {
+  display: none;
+}
+#catalogue-mobile {
+  display: none;
+}
+
+/*Règle responsive*/
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 300px), (max-width: 767) {
+  h1 {
+    font-size: 4rem;
+  } /*1rem = 16px*/
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 2rem;
+    margin: 10px 10px;
+    max-width: 100%;
+  }
+  h3 {
+    font-size: 14 px;
+  }
+  #content-imgsocial a img {
+    width: 20px;
+    margin: 0 10px;
+  }
+}
+#content-imgsocial a img:hover {
+  max-width: 20px;
+  filter: invert(1);
+  mix-blend-mode: difference;
+  border: 1px solid black;
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 6rem;
+  } /*1rem = 16px*/
+  h2 {
+    font-size: 2.7rem;
+  }
+  p {
+    font-size: 3rem;
+    margin: 10px 10px;
+    max-width: 100%;
+  }
+  h3 {
+    font-size: 18 px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 7rem;
+  } /*1rem = 16px*/
+  h2 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 20 px;
+  }
+  #bg-noir {
+    background-color: black;
+    /*width: 70%; /* width of container */
+    height: 400px; /* height of container */
+    object-fit: cover;
+    z-index: 1;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 8rem;
+  } /*1rem = 16px*/ /*100px*/
+  h2 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 960px) {
+  /*-------------hamburger-------------*/
+  #logo-hamburger {
+    display: block;
+  }
+  #container-desktop {
+    display: none;
+  }
+  #contimg1 {
+    display: grid;
+  }
+  #produit {
+    display: none;
+  }
+  #produit-mobile {
+    display: flex;
+    justify-content: center;
+  }
+  #catalogue-desktop {
+    display: none;
+  }
+  #catalogue-mobile {
+    display: flex;
+    justify-content: center;
+  }
+  #logoham {
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navhamburger {
+    display: flex;
+  }
+  .dropdown {
+    display: block;
+  }
+  .dropbtn {
+    position: absolute;
+    right: 0;
+    width: 60px;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #494d49;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: black;
+    width: 100%;
+    z-index: 1;
+    animation-name: slidedown;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes slidedown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .dropdown-content a {
+    display: block;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+
+  .dropdown-content a:hover {
+    color: b1dde8;
+    /*background-color: #f1f1f1;*/
+  }
+
+  .listehamburger {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .listehamburger li {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /*Fin  menu hamburger*/
+}
+
+/*----------effet dans nouveaux produit-----*/
+
+/*-----------zoom intérieur-------*/
+#contimg1,
+#contimg2,
+#contimg3,
+#contimg4 {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* overflow: hidden;*/
+}
+
+#img1 {
+  transition: transform 0.5s ease;
+}
+
+#contimg1:hover #img1 {
+  transform: scale(1.5);
+}
+
+/*-----------zoom sur point de vue------*/
+
+/* Point-zoom Container */
+#img2 {
+  transform-origin: 65% 45%;
+  transition: transform 1s, filter 0.5s ease-out;
+}
+
+/* The Transformation */
+#contimg2:hover #img2 {
+  transform: scale(2);
+}
+
+/*-----------zoom sur flou------*/
+
+#img4 {
+  transition: transform 2s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(60%);
+}
+
+/* The Transformation */
+#contimg4:hover #img4 {
+  filter: brightness(100%);
+  transform: scale(1.5);
+}
+
+/*-----------zoom avec coloration------*/
+
+#img3 {
+  transition: transform 0.5s, filter 1.5s ease-in-out;
+  filter: grayscale(100%);
+}
+
+#contimg3:hover #img3 {
+  filter: grayscale(0);
+  transform: scale(1.5);
+}
+
+/*---début  test grid ---*/
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'mobilier   luminaire luminaire luminaire'
+    'mobilier   bijoux artdelatable artdelatable'
+    'exterieur   bijoux artdelatable artdelatable';
+  grid-gap: 10px;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.grid-container div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+.grid-container2 {
+  display: grid;
+  grid-template-areas: 'vase  sculpture  vasebambou suspension';
+  grid-gap: 10px;
+}
+
+.item1 {
+  grid-area: mobilier;
+}
+.item2 {
+  grid-area: exterieur;
+}
+.item3 {
+  grid-area: luminaire;
+}
+.item4 {
+  grid-area: bijoux;
+}
+.item5 {
+  grid-area: artdelatable;
+}
+.item6 {
+  grid-area: vase;
+}
+.item7 {
+  grid-area: sculpture;
+}
+.item8 {
+  grid-area: vasebambou;
+}
+.item9 {
+  grid-area: suspension;
+}
+#item1,
+#item2,
+#item3,
+#item4,
+#item5 {
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#item1:hover,
+#item2:hover,
+#item3:hover,
+#item4:hover,
+#item5:hover {
+  overflow: hidden;
+  transform: scale(1.5);
+  transition: 2s ease-in-out;
+  z-index: 10;
+}
+
+/*---fin test grid ---*/
+
+.expo-img {
+  background: url('../images/expo.jpg');
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  width: 100%; /* width of container */
+  height: 500px; /* height of container */
+  object-fit: cover;
+  z-index: -1;
+}
+
+#bg-noir {
+  background-color: black;
+  width: 70%; /* width of container */
+  height: 400px; /* height of container */
+  object-fit: cover;
+  z-index: 1;
+}
+
+.photo-expo p,
+.photo-expo h3 {
+  width: 100%;
+}
+
+#form {
+  margin: 30px;
+}
+
+/*-----footer-----*/
+
+footer {
+  display: flex;
+  height: 300px;
+  background-color: #f6f3eb;
+}
+#rowlogofooter {
+  margin: 30px 0;
+}
+#logofooter {
+  display: block;
+  height: 80px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*---gestion des icones reseaux sociaux ---*/
+
+#content-imgsocial a img {
+  width: 50px;
+  margin: 0 10px;
+}
+
+#content-imgsocial a img:hover {
+  max-width: 50px;
+  filter: invert(1);
+  mix-blend-mode: difference;
+  border: 1px solid black;
+}
